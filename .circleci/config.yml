@@ -24,3 +24,6 @@ jobs:
       - run:
           name: Test
           command: yarn test
+      - run:
+          name: Rev
+          command: yarn test
