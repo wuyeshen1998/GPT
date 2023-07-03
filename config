@@ -32,3 +32,4 @@ module.exports = {
         "^.+\\.(t|j)s$": ["@swc/jest"],
     },
 };
+;
