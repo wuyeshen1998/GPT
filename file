@@ -9,7 +9,6 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 
 RUN yarn install
-
 FROM base AS builder
 
 RUN apk update && apk add --no-cache git
