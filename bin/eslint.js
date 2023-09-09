@@ -3,12 +3,11 @@
 /**
  * @fileoverview Main CLI that is run via the eslint command.
  * @author Nicholas C. Zakas
- */
-
+ 
+*/ 
 /* eslint no-console:off -- CLI */
 
 "use strict";
-
 // must do this initialization *before* other requires in order to work
 if (process.argv.includes("--debug")) {
     require("debug").enable("eslint:*,-eslint:code-path,eslintrc:*");
