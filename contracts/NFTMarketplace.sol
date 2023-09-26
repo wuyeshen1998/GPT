@@ -154,6 +154,15 @@ contract NFTMarketplace is ERC721URIStorage {
         return items;
     }
 
+//the event emitted when a token is successfully listed
+    event TokenListedSuccess (
+        uint256 indexed tokenId,
+        address owner,
+        address seller,
+        uint256 price,
+        bool currentlyListed
+    );
+
     function executeSale(uint256 tokenId) public payable {
         uint price = idToListedToken[tokenId].price;
         address seller = idToListedToken[tokenId].seller;
