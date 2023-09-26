@@ -2,7 +2,6 @@
  * @fileoverview Config to enable all rules.
  * @author Robert Fletcher
  */
-
 "use strict";
 
 //------------------------------------------------------------------------------
