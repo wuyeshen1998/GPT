@@ -9,7 +9,6 @@ async function main() {
   const marketplace = await Marketplace.deploy();
 
   await marketplace.deployed();
-
   const data = {
     address: marketplace.address,
     abi: JSON.parse(marketplace.interface.format('json'))
